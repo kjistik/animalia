@@ -1,0 +1,215 @@
+{
+    "value": "Animalia",
+    "children": [
+        {
+            "value": "Chordata",
+            "children": [
+                {
+                    "value": "Mammalia",
+                    "children": [
+                        {
+                            "value": "Carnivora",
+                            "children": [
+                                {
+                                    "value": "Felidae",
+                                    "children": [
+                                        {
+                                            "value": "Panthera",
+                                            "children": [
+                                                {
+                                                    "value": "Leo",
+                                                    "children": [
+                                                        {
+                                                            "value": "Leo",
+                                                            "children": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "value": "Tigris",
+                                                    "children": [
+                                                        {
+                                                            "value": "Tigris",
+                                                            "children": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "value": "Ursidae",
+                                    "children": [
+                                        {
+                                            "value": "Ursus",
+                                            "children": [
+                                                {
+                                                    "value": "Americanus",
+                                                    "children": [
+                                                        {
+                                                            "value": "Americanus",
+                                                            "children": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "value": "Proboscidea",
+                            "children": [
+                                {
+                                    "value": "Elephantidae",
+                                    "children": [
+                                        {
+                                            "value": "Loxodonta",
+                                            "children": [
+                                                {
+                                                    "value": "Africana",
+                                                    "children": [
+                                                        {
+                                                            "value": "Africana",
+                                                            "children": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": "Reptilia",
+                    "children": [
+                        {
+                            "value": "Squamata",
+                            "children": [
+                                {
+                                    "value": "Gekkonidae",
+                                    "children": [
+                                        {
+                                            "value": "Eublepharis",
+                                            "children": [
+                                                {
+                                                    "value": "Macularius"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "value": "Viperidae",
+                                    "children": [
+                                        {
+                                            "value": "Trimeresurus",
+                                            "children": [
+                                                {
+                                                    "value": "Malcolmi"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "value": "Iguanidae",
+                                    "children": [
+                                        {
+                                            "value": "Iguana",
+                                            "children": [
+                                                {
+                                                    "value": "Iguana"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "value": "Varanidae",
+                                    "children": [
+                                        {
+                                            "value": "Varanus",
+                                            "children": [
+                                                {
+                                                    "value": "Komodoensis",
+                                                    "children": [
+                                                        {
+                                                            "value": "Komodoensis",
+                                                            "children": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": "Arthropoda",
+                    "children": [
+                        {
+                            "value": "Insecta",
+                            "children": [
+                                {
+                                    "value": "Hymenoptera",
+                                    "children": [
+                                        {
+                                            "value": "Apidae",
+                                            "children": [
+                                                {
+                                                    "value": "Apis",
+                                                    "children": [
+                                                        {
+                                                            "value": "Melifera",
+                                                            "children": [
+                                                                {
+                                                                    "value": "Iberiensis"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "value": "Malacostraca",
+                            "children": [
+                                {
+                                    "value": "Stomatopoda",
+                                    "children": [
+                                        {
+                                            "value": "Odontodactylidae",
+                                            "children": [
+                                                {
+                                                    "value": "Odontodactylus",
+                                                    "children": [
+                                                        {
+                                                            "value": "Scyllarus"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
