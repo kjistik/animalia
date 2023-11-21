@@ -146,6 +146,9 @@ public class Main {
 
             System.out.println();
             System.out.println(sb.toString());
+        }else {
+            System.out.println();
+            System.out.println("No se ha encontrado el valor ingresado.");
         }
     }
 
