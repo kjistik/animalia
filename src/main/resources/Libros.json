@@ -1,0 +1,302 @@
+{
+    "type":"Tipos de datos",
+    "value":"Libros",
+    "children": [
+        {
+            "type": "Titulo",
+            "value": "The art of computer programming",
+            "children": [
+                {
+                    "type": "Autor",
+                    "value": "Donald Knuth",
+                    "children": [
+                        {
+                            "type":"Año de Publicación",
+                            "value": "1968",
+                            "children": [
+                                {
+                                    "type":"Genero",
+                                    "value": "Computer Sciences",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+
+                }
+            ]
+
+        },
+        {
+            "type": "Titulo",
+            "value": "Clean Code: A Handbook of Agile Software Craftsmanship",
+            "children": [
+                {
+                    "type":"Autor",
+                    "value": "Robert C. Martin",
+                    "children": [
+                        {
+                            "type":"Año de Publicación",
+                            "value": "2008",
+                            "children": [
+                                {
+                                    "type":"Genero",
+                                    "value": "Computer Sciences",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        { 
+            "type":"Titulo",
+            "value": "The Pragmatic Programmer",
+            "children": [
+                {
+                    "type": "Autor",
+                    "value":"Andy Hunt",
+                    "children": [
+                        {
+                            "type": "Año de Publicación",
+                            "value": "1999",
+                            "children": [
+                                {
+                                    "type": "Genero",
+                                    "value": "Computer Sciences",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+
+        },
+        { 
+            "type": "Titulo",
+            "value": "Intruduction To Algorithms",
+            "children": [
+                {
+                    "type": "Autor",
+                    "value": "Thomas H. Cormen - Charles E. Leiserson - Ronald L. Rivest - Clifford Stein",
+                    "children": [
+                        {
+                            "type": "Año de Publicación",
+                            "value": "1990",
+                            "children": [
+                                {
+                                    "type": "Genero",
+                                    "value": "Computer Sciences",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+
+        },
+        {
+            "type":"Titulo",
+            "value": "The Princeton Companion to Mathematics",
+            "children": [
+                {
+                    "type":"Autor",
+                    "value": "June Barrow-Green - Timothy Gowers - and Imre Leader",
+                    "children": [
+                        {
+                            "type": "Año de Publicación",
+                            "value": "2008",
+                            "children": [
+                                {
+                                    "type":"Genero",
+                                    "value": "Mathematics",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+
+                }
+            ]
+
+        },
+        {
+            "type": "Titulo",
+            "value": "A Mathematical Introduction to Logic, Second Edition",
+            "children": [
+                {
+                    "type": "Autor",
+                    "value": "James Stuart Tanton",
+                    "children": [
+                        {
+                            "type": "Año de Publicación",
+                            "value": "1966",
+                            "children": [
+                                {
+                                    "type":"Genero",
+                                    "value": "Mathematics",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+
+                }
+            ]
+
+        },
+        {
+            "type":"Titulo",
+            "value": "Categories for the Working Mathematician",
+            "children": [
+                {
+                    "type":"Autor",
+                    "value": "Saunders Mac Lane",
+                    "children": [
+                        {
+                            "type":"Año de Publicación",
+                            "value": "1972",
+                            "children": [
+                                {
+                                    "type":"Genero",
+                                    "value": "Mathematics",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+
+                }
+            ]
+
+        },
+        {
+            "type":"Titulo",
+            "value": "Encyclopedia of Mathematics",
+            "children": [
+                {
+                    "type": "Autor",
+                    "value": "James Stuart Tanton",
+                    "children": [
+                        {
+                            "type": "Año de Publicación",
+                            "value": "1966",
+                            "children": [
+                                {
+                                    "type":"Genero",
+                                    "value": "Encyclopedia of Mathematics",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+
+                }
+            ]
+
+        },
+        {
+            "type": "Titulo",
+            "value": "Clean Architecture: A Craftsman’s Guide to Software Structure and Design",
+            "children": [
+                {
+                    "type": "Autor",
+                    "value": "Robert C. Martin",
+                    "children": [
+                        {
+                            "type":"Año de Publicación",
+                            "value": "2017",
+                            "children": [
+                                {
+                                    "type":"Genero",
+                                    "value": "Computer Sciences",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+
+                }
+            ]
+
+        },
+        {
+            "type": "Titulo",
+            "value": "Pattern-Oriented Software Architecture: Volume 2",
+            "children": [
+                {
+                    "type": "Autor",
+                    "value": "Douglas C. Schmidt",
+                    "children": [
+                        {
+                            "type":"Año de Publicación",
+                            "value": "2000",
+                            "children": [
+                                {
+                                    "type":"Genero",
+                                    "value": "Computer Sciences",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+
+                }
+            ]
+
+        },
+        {
+            "type": "Titulo",
+            "value": "Software Architecture: Foundations, Theory, and Practice",
+            "children": [
+                {
+                    "type": "Autor",
+                    "value": "Richard N. Taylor",
+                    "children": [
+                        {
+                            "type":"Año de Publicación",
+                            "value": "2009",
+                            "children": [
+                                {
+                                    "type": "Genero",
+                                    "value": "Computer Sciences",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+
+                }
+            ]
+
+        },
+        {
+            "type": "Titulo",
+            "value": "Documenting Software Architectures: Views and Beyond",
+            "children": [
+                {
+                    "type":"Autor",
+                    "value": "Paul Clements",
+                    "children": [
+                        {
+                            "type":"Año de Publicación",
+                            "value": "2010",
+                            "children": [
+                                {
+                                    "type": "Genero",
+                                    "value": "Computer Sciences",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+
+                }
+            ]
+
+        }
+    ]
+}
