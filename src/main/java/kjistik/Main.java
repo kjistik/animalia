@@ -1,17 +1,19 @@
 package kjistik;
 
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Stack;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 public class Main {
+    static Stack<Node> stack = new Stack<Node>();
     static final String path = "./src/main/resources";
     static File directory = new File(path);
     static boolean flag = true;
@@ -34,18 +36,15 @@ public class Main {
         }
         int op;
         do {
-             System.out.println(
-                "[1] Imprimir todo el árbol\n"+
-                "[2] Buscar un valor especifico\n"+
-                "[3] Salir\n"
-                ); 
-                op = input.nextInt();
-                input.nextLine();
-                buildOption(op, input); 
-        }while(flag);
+            System.out.println(
+                    "[1] Imprimir todo el árbol\n" +
+                            "[2] Buscar un valor especifico\n" +
+                            "[3] Salir\n");
+            op = input.nextInt();
+            input.nextLine();
+            buildOption(op, input);
+        } while (flag);
     }
-
-    
 
     static void control(File file, Scanner input) {
 
@@ -75,10 +74,10 @@ public class Main {
 
     static Node buildNode(JSONObject jsonObject) {
         Node node = new Node();
-        if(jsonObject.containsKey("type") && jsonObject.containsKey("value")){
+        if (jsonObject.containsKey("type") && jsonObject.containsKey("value")) {
             node.type = (String) jsonObject.get("type");
             node.value = (String) jsonObject.get("value");
-        }else {
+        } else {
             node.type = null;
             node.value = null;
         }
@@ -94,10 +93,10 @@ public class Main {
         return node;
     }
 
-    static void buildOption(int opcion, Scanner input){
+    static void buildOption(int opcion, Scanner input) {
         switch (opcion) {
             case 1:
-                StringBuilder sb = new StringBuilder(); 
+                StringBuilder sb = new StringBuilder();
                 dfsPrintTree(tree.first, sb);
                 break;
             case 2:
@@ -108,7 +107,7 @@ public class Main {
                 break;
             default:
                 break;
-        }        
+        }
     }
 
     static void dfsPrintTree(Node node, StringBuilder sb) {
@@ -119,7 +118,7 @@ public class Main {
         System.out.println(sb.toString());
         sb.setLength(length);
 
-        for(Node child : node.children){
+        for (Node child : node.children) {
             dfsPrintTree(child, sb);
         }
 
@@ -131,37 +130,30 @@ public class Main {
         System.out.println("Ingrese el valor a buscar: ");
         value = input.nextLine();
         Node data = find(tree.first, value);
-
-        if(data != null) {
-            StringBuilder sb = new StringBuilder(); 
-            sb.append(data.type).append("\n").append(data.value).append("\n");
-            String d = data.children.toString();
-            char [] dt = d.toCharArray();
-
-            for(int i = 0; i < dt.length; i++){  
-                if(dt[i] != '[' && dt[i] != ']') {
-                    sb.append(dt[i]);
-                }
-            }
-
+        StringBuilder sb = new StringBuilder();
+        if (data != null) {
+            do {
+                sb.append(stack.peek().type).append(" : ").append(stack.pop().value).append("\n");
+            } while (!(stack.size()==1));
             System.out.println();
             System.out.println(sb.toString());
-        }else {
+        } else {
             System.out.println();
             System.out.println("No se ha encontrado el valor ingresado.");
         }
     }
 
     static Node find(Node node, String value) {
-        
-        if(node.type.equals(value) || node.value.equals(value)){
+
+        if (node.type.equals(value) || node.value.equals(value)) {
+            
             return node;
         }
 
         for (Node child : node.children) {
-            
             Node found = find(child, value);
-            if(found != null) {
+            if (found != null) {
+            stack.push(found);
                 return child;
             }
         }
