@@ -76,7 +76,7 @@
         },
         { 
             "type": "Titulo",
-            "value": "Intruduction To Algorithms",
+            "value": "Introduction To Algorithms",
             "children": [
                 {
                     "type": "Autor",

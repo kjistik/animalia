@@ -1,215 +1,284 @@
 {
     "value": "Animalia",
+    "type": "reino",
     "children": [
-        {
-            "value": "Chordata",
+      {
+        "value": "Chordata",
+        "type": "filo",
+        "children": [
+          {
+            "value": "Mammalia",
+            "type": "clase",
             "children": [
-                {
-                    "value": "Mammalia",
+              {
+                "value": "Carnivora",
+                "type": "orden",
+                "children": [
+                  {
+                    "value": "Felidae",
+                    "type": "familia",
                     "children": [
-                        {
-                            "value": "Carnivora",
+                      {
+                        "value": "Panthera",
+                        "type": "género",
+                        "children": [
+                          {
+                            "value": "Leo",
+                            "type": "especie",
                             "children": [
-                                {
-                                    "value": "Felidae",
-                                    "children": [
-                                        {
-                                            "value": "Panthera",
-                                            "children": [
-                                                {
-                                                    "value": "Leo",
-                                                    "children": [
-                                                        {
-                                                            "value": "Leo",
-                                                            "children": []
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "value": "Tigris",
-                                                    "children": [
-                                                        {
-                                                            "value": "Tigris",
-                                                            "children": []
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "value": "Ursidae",
-                                    "children": [
-                                        {
-                                            "value": "Ursus",
-                                            "children": [
-                                                {
-                                                    "value": "Americanus",
-                                                    "children": [
-                                                        {
-                                                            "value": "Americanus",
-                                                            "children": []
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
+                              {
+                                "value": "Leo",
+                                "type": "subespecie",
+                                "children": []
+                              }
                             ]
-                        },
-                        {
-                            "value": "Proboscidea",
+                          },
+                          {
+                            "value": "Tigris",
+                            "type": "especie",
                             "children": [
-                                {
-                                    "value": "Elephantidae",
-                                    "children": [
-                                        {
-                                            "value": "Loxodonta",
-                                            "children": [
-                                                {
-                                                    "value": "Africana",
-                                                    "children": [
-                                                        {
-                                                            "value": "Africana",
-                                                            "children": []
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
+                              {
+                                "value": "Tigris",
+                                "type": "subespecie",
+                                "children": []
+                              }
                             ]
-                        }
+                          }
+                        ]
+                      }
                     ]
-                },
-                {
-                    "value": "Reptilia",
+                  },
+                  {
+                    "value": "Ursidae",
+                    "type": "familia",
                     "children": [
-                        {
-                            "value": "Squamata",
+                      {
+                        "value": "Ursus",
+                        "type": "género",
+                        "children": [
+                          {
+                            "value": "Americanus",
+                            "type": "especie",
                             "children": [
-                                {
-                                    "value": "Gekkonidae",
-                                    "children": [
-                                        {
-                                            "value": "Eublepharis",
-                                            "children": [
-                                                {
-                                                    "value": "Macularius"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "value": "Viperidae",
-                                    "children": [
-                                        {
-                                            "value": "Trimeresurus",
-                                            "children": [
-                                                {
-                                                    "value": "Malcolmi"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "value": "Iguanidae",
-                                    "children": [
-                                        {
-                                            "value": "Iguana",
-                                            "children": [
-                                                {
-                                                    "value": "Iguana"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "value": "Varanidae",
-                                    "children": [
-                                        {
-                                            "value": "Varanus",
-                                            "children": [
-                                                {
-                                                    "value": "Komodoensis",
-                                                    "children": [
-                                                        {
-                                                            "value": "Komodoensis",
-                                                            "children": []
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
+                              {
+                                "value": "Americanus",
+                                "type": "subespecie",
+                                "children": []
+                              }
                             ]
-                        }
+                          }
+                        ]
+                      }
                     ]
-                },
-                {
-                    "value": "Arthropoda",
+                  }
+                ]
+              },
+              {
+                "value": "Proboscidea",
+                "type": "orden",
+                "children": [
+                  {
+                    "value": "Elephantidae",
+                    "type": "familia",
                     "children": [
-                        {
-                            "value": "Insecta",
+                      {
+                        "value": "Loxodonta",
+                        "type": "género",
+                        "children": [
+                          {
+                            "value": "Africana",
+                            "type": "especie",
                             "children": [
-                                {
-                                    "value": "Hymenoptera",
-                                    "children": [
-                                        {
-                                            "value": "Apidae",
-                                            "children": [
-                                                {
-                                                    "value": "Apis",
-                                                    "children": [
-                                                        {
-                                                            "value": "Melifera",
-                                                            "children": [
-                                                                {
-                                                                    "value": "Iberiensis"
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
+                              {
+                                "value": "Africana",
+                                "type": "subespecie",
+                                "children": []
+                              }
                             ]
-                        },
-                        {
-                            "value": "Malacostraca",
-                            "children": [
-                                {
-                                    "value": "Stomatopoda",
-                                    "children": [
-                                        {
-                                            "value": "Odontodactylidae",
-                                            "children": [
-                                                {
-                                                    "value": "Odontodactylus",
-                                                    "children": [
-                                                        {
-                                                            "value": "Scyllarus"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
+                          }
+                        ]
+                      }
                     ]
-                }
+                  }
+                ]
+              }
             ]
-        }
+          },
+          {
+            "value": "Reptilia",
+            "type": "clase",
+            "children": [
+              {
+                "value": "Squamata",
+                "type": "orden",
+                "children": [
+                  {
+                    "value": "Gekkonidae",
+                    "type": "familia",
+                    "children": [
+                      {
+                        "value": "Eublepharis",
+                        "type": "género",
+                        "children": [
+                          {
+                            "value": "Macularius",
+                            "type": "especie",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "value": "Viperidae",
+                    "type": "familia",
+                    "children": [
+                      {
+                        "value": "Trimeresurus",
+                        "type": "género",
+                        "children": [
+                          {
+                            "value": "Malcolmi",
+                            "type": "especie",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "value": "Iguanidae",
+                    "type": "familia",
+                    "children": [
+                      {
+                        "value": "Iguana",
+                        "type": "género",
+                        "children": [
+                          {
+                            "value": "Iguana",
+                            "type": "especie",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "value": "Varanidae",
+                    "type": "familia",
+                    "children": [
+                      {
+                        "value": "Varanus",
+                        "type": "género",
+                        "children": [
+                          {
+                            "value": "Komodoensis",
+                            "type": "especie",
+                            "children": [
+                              {
+                                "value": "Komodoensis",
+                                "type": "subespecie",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "value": "Corytophanidae",
+                    "type": "familia",
+                    "children": [
+                      {
+                        "value": "Basiliscus",
+                        "type": "género",
+                        "children": [
+                          {
+                            "value": "Basiliscus basiliscus",
+                            "type": "especie",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "value": "Arthropoda",
+            "type": "filo",
+            "children": [
+              {
+                "value": "Insecta",
+                "type": "clase",
+                "children": [
+                  {
+                    "value": "Hymenoptera",
+                    "type": "orden",
+                    "children": [
+                      {
+                        "value": "Apidae",
+                        "type": "familia",
+                        "children": [
+                          {
+                            "value": "Apis",
+                            "type": "género",
+                            "children": [
+                              {
+                                "value": "Melifera",
+                                "type": "especie",
+                                "children": [
+                                  {
+                                    "value": "Iberiensis",
+                                    "type": "subespecie",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "value": "Malacostraca",
+                "type": "clase",
+                "children": [
+                  {
+                    "value": "Stomatopoda",
+                    "type": "orden",
+                    "children": [
+                      {
+                        "value": "Odontodactylidae",
+                        "type": "familia",
+                        "children": [
+                          {
+                            "value": "Odontodactylus",
+                            "type": "género",
+                            "children": [
+                              {
+                                "value": "Scyllarus",
+                                "type": "especie",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     ]
-}
+  }
+  

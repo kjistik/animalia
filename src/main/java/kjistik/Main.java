@@ -8,7 +8,6 @@ import org.json.simple.parser.ParseException;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -69,12 +68,12 @@ public class Main {
     }
 
     static Tree buildTree(JSONObject jsonObject) {
-        tree.first = buildNode(jsonObject);
+        tree.first = buildNode(jsonObject, null);
         return tree;
     }
 
-    static Node buildNode(JSONObject jsonObject) {
-        Node node = new Node();
+    static Node buildNode(JSONObject jsonObject, Node parent) {
+        Node node = new Node(null, null, parent);
         if(jsonObject.containsKey("type") && jsonObject.containsKey("value")){
             node.type = (String) jsonObject.get("type");
             node.value = (String) jsonObject.get("value");
@@ -82,12 +81,12 @@ public class Main {
             node.type = null;
             node.value = null;
         }
-        node.children = new ArrayList<>();
 
         JSONArray childrenArray = (JSONArray) jsonObject.get("children");
         if (childrenArray != null) {
             for (Object child : childrenArray) {
-                node.children.add(buildNode((JSONObject) child));
+                Node childNode = buildNode((JSONObject) child, node);
+                node.addChild(childNode);
             }
         }
 
@@ -116,6 +115,8 @@ public class Main {
         int length = sb.length();
         sb.append(node.type).append(": ").append(node.value);
 
+        System.out.println();
+
         System.out.println(sb.toString());
         sb.setLength(length);
 
@@ -131,40 +132,45 @@ public class Main {
         System.out.println("Ingrese el valor a buscar: ");
         value = input.nextLine();
         Node data = find(tree.first, value);
-
-        if(data != null) {
-            StringBuilder sb = new StringBuilder(); 
-            sb.append(data.type).append("\n").append(data.value).append("\n");
-            String d = data.children.toString();
-            char [] dt = d.toCharArray();
-
-            for(int i = 0; i < dt.length; i++){  
-                if(dt[i] != '[' && dt[i] != ']') {
-                    sb.append(dt[i]);
-                }
-            }
-
-            System.out.println();
-            System.out.println(sb.toString());
-        }else {
+        if (data != null) {
+            StringBuilder sb = new StringBuilder();
+            dfsPrintPartialTree(data, sb);
+        } else {
             System.out.println();
             System.out.println("No se ha encontrado el valor ingresado.");
+        } 
+    }
+
+    static void dfsPrintPartialTree(Node node, StringBuilder sb) {
+
+        System.out.println();
+        
+        int length = sb.length();
+        sb.append(node.type).append(": ").append(node.value);
+
+        System.out.println(sb.toString());
+        sb.setLength(length);
+
+        for(Node child : node.children){
+            dfsPrintTree(child, sb);
         }
+
     }
 
     static Node find(Node node, String value) {
-        
-        if(node.type.equals(value) || node.value.equals(value)){
-            return node;
-        }
+
+        if(node.value.equals(value)){
+           return node;
+        }  
 
         for (Node child : node.children) {
             
             Node found = find(child, value);
             if(found != null) {
-                return child;
+                return found;
             }
         }
+ 
         return null;
     }
 
