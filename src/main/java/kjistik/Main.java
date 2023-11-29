@@ -44,8 +44,6 @@ public class Main {
         }while(flag);
     }
 
-    
-
     static void control(File file, Scanner input) {
 
         System.out.println("Cargando los datos desde: " + file.getName());
@@ -114,8 +112,6 @@ public class Main {
 
         int length = sb.length();
         sb.append(node.type).append(": ").append(node.value);
-
-        System.out.println();
 
         System.out.println(sb.toString());
         sb.setLength(length);
